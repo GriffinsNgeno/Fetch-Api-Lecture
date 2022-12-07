@@ -55,5 +55,20 @@ fetch(url)
 
     createElementFunc()
     appendElementFunc()
+    // appendElementFunc()
+const parent = document.querySelector('#parentList');
+
+// Create one element
+const child = document.createElement('li');
+child.innerText = 'hello';
+
+// Create another element
+const grandchild = document.createElement('li');
+grandchild.innerText = 'Added';
+
+// Append 2nd element as a child of the 1st element
+parent.appendChild(child);
+child.appendChild(grandchild);
 
   });
+
